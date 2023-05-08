@@ -39,7 +39,6 @@ def index():
 
 
 
-
 @app.get("/get-task/{id}")
 def get_todo(id: int = Path(description = "The ID of task is not available")):
     return todos[id]
